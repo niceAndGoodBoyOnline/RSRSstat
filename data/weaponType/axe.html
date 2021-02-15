@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+    <style></style>
+  </head>
+  <body>
+    <div id="content">
+      <div id="questSelectContent">
+        Select a Quest to calculate Stat Soft Cap:
+        <Label for='chapterSelect'>Chapter</label>
+        <select id="chapterSelect" name="chapterSelect">
+          <option id='chapter1' name='1'>1</option>
+          <option id='chapter2' name='2'>2</option>
+        </select>
+        <select id="questSelect1" name="questSelect1">
+        </select>
+        <select id="questSelect2" name="questSelect2">
+          <option id='stage1' name='stage1'>1</option>
+          <option id='stage2' name='stage2'>2</option>
+          <option id='stage3' name='stage3'>3</option>
+          <option id='stage4' name='stage4'>4</option>
+          <option id='stage5' name='stage5'>5</option>
+        </select>
+        <select id='difficultySelect' name='difficulty'>
+          <option id='normal' name='normal'>Normal</option>
+          <option id='hard' name='hard'>Hard</option>
+          <option id='veryHard' name='veryHard'>Very Hard</option>
+        <input id='setStatCapButton' type='button' value='Set'></input>
+        <input id='unsetStatCapButton' type='button' value='Unset'></input>
+      </div>
+      <div id="characters">
+      </div>
+      <div id="displayZone">
+        <table id="displayTable"></table>
+      </div>
+    </div>
+
+    <script type="module" src="../../js/weaponType/axe.js"></script>
+    <script type="module" src="../../js/module/questDataShim.js"></script>
+  </body>
+</html>
